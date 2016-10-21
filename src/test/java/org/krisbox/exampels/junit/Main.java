@@ -21,13 +21,13 @@ public class Main {
     @Test
     public void testGetClientID() throws FileNotFoundException, IOException {
         PingProperties pingProps = new PingPropertiesImpl();
-        assertEquals(pingProps.getClientID(), "6ef0f11d-a7bd-44c9-a65c-89b51fbbc707");
+        assertEquals(pingProps.getClientID(), "xxx");
     }
 
     @Test
     public void testGetApiKey() throws FileNotFoundException, IOException {
         PingProperties pingProps = new PingPropertiesImpl();
-        assertEquals(pingProps.getApiKey(), "6T7WFc7wlEmqLH2QFy6yZFHp8vS3GT");
+        assertEquals(pingProps.getApiKey(), "xxx");  
     }
 
     @Test
