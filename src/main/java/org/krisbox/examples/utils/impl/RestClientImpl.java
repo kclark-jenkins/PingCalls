@@ -34,7 +34,9 @@ public class RestClientImpl implements RestClient {
         return sendGET(pingProps.getPingGet() + "user", pingProps.getUserAgent());
     }
 
-    // TODO: Implement remaining calls
+    public String getAllGroups() throws IOException {
+        return sendGET(pingProps.getPingGet() + "group", pingProps.getUserAgent());
+    }
 
     public String sendGET(String get_url, String user_agent) throws ProtocolException, IOException {
         HttpClient httpclient = new DefaultHttpClient();

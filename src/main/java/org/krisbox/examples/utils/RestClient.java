@@ -8,4 +8,5 @@ import java.net.ProtocolException;
  */
 public interface RestClient {
     public String getAllUsers() throws IOException;
+    public String getAllGroups() throws IOException;
 }
