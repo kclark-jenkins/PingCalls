@@ -1,4 +1,4 @@
-package org.krisbox.examples.utils.ping;
+package org.krisbox.examples.utils.properties;
 
 public interface PingProperties {
     String getClientID();

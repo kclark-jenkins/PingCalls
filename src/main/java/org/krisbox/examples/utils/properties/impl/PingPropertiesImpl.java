@@ -1,7 +1,7 @@
-package org.krisbox.examples.utils.ping.impl;
+package org.krisbox.examples.utils.properties.impl;
 
 import org.apache.log4j.Logger;
-import org.krisbox.examples.utils.ping.PingProperties;
+import org.krisbox.examples.utils.properties.PingProperties;
 import org.krisbox.examples.utils.constants.PingPropertyFields;
 
 import java.io.*;

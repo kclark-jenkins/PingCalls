@@ -3,10 +3,9 @@ package org.krisbox.examples.utils.http.impl;
 import org.apache.http.Header;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.message.BasicHeader;
-import org.apache.log4j.Logger;
 import org.krisbox.examples.utils.http.HttpClientBuilder;
 import org.krisbox.examples.utils.constants.HttpClientFields;
-import org.krisbox.examples.utils.ping.impl.PingPropertiesImpl;
+import org.krisbox.examples.utils.properties.impl.PingPropertiesImpl;
 
 import javax.xml.bind.DatatypeConverter;
 import java.io.IOException;
