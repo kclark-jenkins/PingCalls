@@ -14,21 +14,20 @@ public class PingPropertiesImpl extends PingLoggerImpl implements PingProperties
     private Properties prop = new Properties();
 
     public PingPropertiesImpl() throws FileNotFoundException, IOException {
-        super();
         debug("PingPropertiesImpl()");
         readProperties();
     }
 
-    public String getClientID()          {super.debug("PingPropertiesImpl.getCLientID()");return prop.get(PingPropertyFields.PING_CLIENT_ID.name()).toString();}
-    public String getApiKey()            {super.debug("PingPropertiesImpl.getApiKey()");return prop.get(PingPropertyFields.PING_API_KEY.name()).toString();}
-    public String getPingGet()           {super.debug("PingPropertiesImpl.getPingGet()");return prop.get(PingPropertyFields.PING_GET.name()).toString();}
-    public String getPingPut()           {super.debug("PingPropertiesImpl.getPingPut()");return prop.get(PingPropertyFields.PING_PUT.name()).toString();};
-    public String getPingPatch()         {super.debug("PingPropertiesImpl.getPingPatch()");return prop.get(PingPropertyFields.PING_PATCH.name()).toString();};
-    public String getPingDelete()        {super.debug("PingPropertiesImpl.getPingDelete()");return prop.get(PingPropertyFields.PING_DELETE.name()).toString();};
-    public String getPingAuthenticate()  {super.debug("PingPropertiesImpl.getPingAuthenticate()");return prop.get(PingPropertyFields.PING_AUTHENTICATE.name()).toString();};
-    public String getPingInvite()        {super.debug("PingPropertiesImpl.getPingInvite()");return prop.get(PingPropertyFields.PING_INVITE.name()).toString();};
-    public String getPingGroupCount()    {super.debug("PingPropertiesImpl.getPingGroupCount()");return prop.get(PingPropertyFields.PING_GROUP_COUNT.name()).toString();};
-    public String getUserAgent()         {super.debug("PingPropertiesImpl.getUserAgent()");return prop.get(PingPropertyFields.USER_AGENT.name()).toString();}
+    public String getClientID()          {debug("PingPropertiesImpl.getCLientID()");return prop.get(PingPropertyFields.PING_CLIENT_ID.name()).toString();}
+    public String getApiKey()            {debug("PingPropertiesImpl.getApiKey()");return prop.get(PingPropertyFields.PING_API_KEY.name()).toString();}
+    public String getPingGet()           {debug("PingPropertiesImpl.getPingGet()");return prop.get(PingPropertyFields.PING_GET.name()).toString();}
+    public String getPingPut()           {debug("PingPropertiesImpl.getPingPut()");return prop.get(PingPropertyFields.PING_PUT.name()).toString();};
+    public String getPingPatch()         {debug("PingPropertiesImpl.getPingPatch()");return prop.get(PingPropertyFields.PING_PATCH.name()).toString();};
+    public String getPingDelete()        {debug("PingPropertiesImpl.getPingDelete()");return prop.get(PingPropertyFields.PING_DELETE.name()).toString();};
+    public String getPingAuthenticate()  {debug("PingPropertiesImpl.getPingAuthenticate()");return prop.get(PingPropertyFields.PING_AUTHENTICATE.name()).toString();};
+    public String getPingInvite()        {debug("PingPropertiesImpl.getPingInvite()");return prop.get(PingPropertyFields.PING_INVITE.name()).toString();};
+    public String getPingGroupCount()    {debug("PingPropertiesImpl.getPingGroupCount()");return prop.get(PingPropertyFields.PING_GROUP_COUNT.name()).toString();};
+    public String getUserAgent()         {debug("PingPropertiesImpl.getUserAgent()");return prop.get(PingPropertyFields.USER_AGENT.name()).toString();}
 
     private void readProperties() throws FileNotFoundException, IOException {
         debug("PingPropertiesImpl.readProperties()");

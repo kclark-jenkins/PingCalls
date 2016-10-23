@@ -8,12 +8,4 @@ public class PingClient extends RestClientImpl {
     public PingClient() throws IOException {
         super();
     }
-
-    public String getAllUsers() throws IOException {
-        return super.getAllUsers();
-    }
-
-    public String getAllGroups() throws IOException {
-        return super.getAllGroups();
-    }
 }

@@ -15,7 +15,6 @@ import java.util.List;
 
 public class RestClientImpl extends HttpClientBuilderImpl implements RestClient {
     public RestClientImpl() throws IOException {
-        super();
     }
 
     public String getAllUsers() throws IOException {
@@ -27,7 +26,7 @@ public class RestClientImpl extends HttpClientBuilderImpl implements RestClient 
         clientOptions.put(HttpClientFields.Endpoint, "user");
         rootRequest.put(HttpClientFields.Client, clientOptions);
 
-        return sendGET((HttpGet)super.buildHttpClient(rootRequest));
+        return sendGET((HttpGet)buildHttpClient(rootRequest));
     }
 
     public String getAllGroups() throws IOException {
@@ -39,7 +38,7 @@ public class RestClientImpl extends HttpClientBuilderImpl implements RestClient 
         clientOptions.put(HttpClientFields.Endpoint, "group");
         rootRequest.put(HttpClientFields.Client, clientOptions);
 
-        return sendGET((HttpGet)super.buildHttpClient(rootRequest));
+        return sendGET((HttpGet)buildHttpClient(rootRequest));
     }
 
     private String sendGET(Object request) throws ProtocolException, IOException {
