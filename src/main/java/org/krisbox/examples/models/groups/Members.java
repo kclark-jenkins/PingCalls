@@ -1,8 +1,5 @@
 package org.krisbox.examples.models.groups;
 
-/**
- * Created by kclark on 10/21/16.
- */
 public class Members {
     private String value;
 
@@ -41,8 +38,5 @@ public class Members {
     }
 
     @Override
-    public String toString()
-    {
-        return "ClassPojo [value = "+value+", display = "+display+", type = "+type+"]";
-    }
+    public String toString() { return "ClassPojo [value = "+value+", display = "+display+", type = "+type+"]"; }
 }

@@ -1,8 +1,5 @@
 package org.krisbox.examples.models.groups;
 
-/**
- * Created by kclark on 10/21/16.
- */
 public class Meta {
     private String lastModified;
 
@@ -41,8 +38,5 @@ public class Meta {
     }
 
     @Override
-    public String toString()
-    {
-        return "ClassPojo [lastModified = "+lastModified+", location = "+location+", created = "+created+"]";
-    }
+    public String toString() { return "ClassPojo [lastModified = "+lastModified+", location = "+location+", created = "+created+"]"; }
 }

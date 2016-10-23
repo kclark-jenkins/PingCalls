@@ -1,4 +1,4 @@
-package org.krisbox.examples.utils;
+package org.krisbox.examples.utils.constants;
 
 /**
  * Created by kclark on 10/20/16.

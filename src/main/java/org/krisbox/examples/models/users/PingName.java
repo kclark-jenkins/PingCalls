@@ -1,8 +1,5 @@
 package org.krisbox.examples.models.users;
 
-/**
- * Created by kclark on 10/21/16.
- */
 public class PingName {
     private String familyName;
 
@@ -29,8 +26,5 @@ public class PingName {
     }
 
     @Override
-    public String toString()
-    {
-        return "ClassPojo [familyName = "+familyName+", givenName = "+givenName+"]";
-    }
+    public String toString() { return "ClassPojo [familyName = "+familyName+", givenName = "+givenName+"]"; }
 }

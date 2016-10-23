@@ -1,8 +1,5 @@
 package org.krisbox.examples.models.groups;
 
-/**
- * Created by kclark on 10/21/16.
- */
 public class PingGroups {
     private Resources[] resources;
     private String[] schemas;
@@ -72,8 +69,5 @@ public class PingGroups {
     }
 
     @Override
-    public String toString()
-    {
-        return "ClassPojo [resources = "+resources+", schemas = "+schemas+", startIndex = "+startIndex+", count = "+count+", totalResults = "+totalResults+", itemsPerPage = "+itemsPerPage+"]";
-    }
+    public String toString() { return "ClassPojo [resources = "+resources+", schemas = "+schemas+", startIndex = "+startIndex+", count = "+count+", totalResults = "+totalResults+", itemsPerPage = "+itemsPerPage+"]"; }
 }

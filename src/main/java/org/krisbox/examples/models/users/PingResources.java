@@ -1,28 +1,23 @@
 package org.krisbox.examples.models.users;
 
-/**
- * Created by kclark on 10/21/16.
- */
 public class PingResources {
-    private PingPhotos[] photos;
     private String id;
+
     private String[] schemas;
+
     private PingName name;
+
     private String userName;
+
     private String active;
+
     private PingEmails[] emails;
+
+    private String externalId;
+
     private PingGroups[] groups;
+
     private PingMeta meta;
-
-    public PingPhotos[] getPhotos ()
-    {
-        return photos;
-    }
-
-    public void setPhotos (PingPhotos[] photos)
-    {
-        this.photos = photos;
-    }
 
     public String getId ()
     {
@@ -84,12 +79,22 @@ public class PingResources {
         this.emails = emails;
     }
 
+    public String getExternalId ()
+    {
+        return externalId;
+    }
+
+    public void setExternalId (String externalId)
+    {
+        this.externalId = externalId;
+    }
+
     public PingGroups[] getGroups ()
     {
         return groups;
     }
 
-    public void setPingGroups (PingGroups[] groups)
+    public void setGroups (PingGroups[] groups)
     {
         this.groups = groups;
     }
@@ -105,8 +110,5 @@ public class PingResources {
     }
 
     @Override
-    public String toString()
-    {
-        return "ClassPojo [photos = "+photos+", id = "+id+", schemas = "+schemas+", name = "+name+", userName = "+userName+", active = "+active+", emails = "+emails+", groups = "+groups+", meta = "+meta+"]";
-    }
+    public String toString() { return "ClassPojo [id = "+id+", schemas = "+schemas+", name = "+name+", userName = "+userName+", active = "+active+", emails = "+emails+", externalId = "+externalId+", groups = "+groups+", meta = "+meta+"]"; }
 }

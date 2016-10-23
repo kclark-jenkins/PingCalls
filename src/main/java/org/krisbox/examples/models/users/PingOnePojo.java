@@ -1,8 +1,5 @@
 package org.krisbox.examples.models.users;
 
-/**
- * Created by kclark on 10/21/16.
- */
 public class PingOnePojo {
     private String createTimeStamp;
 
@@ -41,10 +38,7 @@ public class PingOnePojo {
         return lastModifiedTimeStamp;
     }
 
-    public void setLastModifiedTimeStamp (String lastModifiedTimeStamp)
-    {
-        this.lastModifiedTimeStamp = lastModifiedTimeStamp;
-    }
+    public void setLastModifiedTimeStamp (String lastModifiedTimeStamp) { this.lastModifiedTimeStamp = lastModifiedTimeStamp; }
 
     public String getDirectoryId ()
     {
@@ -77,8 +71,5 @@ public class PingOnePojo {
     }
 
     @Override
-    public String toString()
-    {
-        return "ClassPojo [createTimeStamp = "+createTimeStamp+", accountId = "+accountId+", lastModifiedTimeStamp = "+lastModifiedTimeStamp+", directoryId = "+directoryId+", state = "+state+", lastLoginTime = "+lastLoginTime+"]";
-    }
+    public String toString() { return "ClassPojo [createTimeStamp = "+createTimeStamp+", accountId = "+accountId+", lastModifiedTimeStamp = "+lastModifiedTimeStamp+", directoryId = "+directoryId+", state = "+state+", lastLoginTime = "+lastLoginTime+"]"; }
 }

@@ -1,8 +1,5 @@
 package org.krisbox.examples.models.users;
 
-/**
- * Created by kclark on 10/21/16.
- */
 public class PingMeta {
     private String lastModified;
 
@@ -41,8 +38,5 @@ public class PingMeta {
     }
 
     @Override
-    public String toString()
-    {
-        return "ClassPojo [lastModified = "+lastModified+", created = "+created+", location = "+location+"]";
-    }
+    public String toString() { return "ClassPojo [lastModified = "+lastModified+", created = "+created+", location = "+location+"]"; }
 }

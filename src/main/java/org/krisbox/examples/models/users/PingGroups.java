@@ -1,8 +1,5 @@
 package org.krisbox.examples.models.users;
 
-/**
- * Created by kclark on 10/21/16.
- */
 public class PingGroups {
     private String value;
 
@@ -29,8 +26,5 @@ public class PingGroups {
     }
 
     @Override
-    public String toString()
-    {
-        return "ClassPojo [value = "+value+", display = "+display+"]";
-    }
+    public String toString() { return "ClassPojo [value = "+value+", display = "+display+"]"; }
 }

@@ -1,8 +1,5 @@
 package org.krisbox.examples.models.groups;
 
-/**
- * Created by kclark on 10/21/16.
- */
 public class Schemas {
     private String createTimeStamp;
 
@@ -53,8 +50,5 @@ public class Schemas {
     }
 
     @Override
-    public String toString()
-    {
-        return "ClassPojo [createTimeStamp = "+createTimeStamp+", accountId = "+accountId+", lastModifiedTimeStamp = "+lastModifiedTimeStamp+", directoryId = "+directoryId+"]";
-    }
+    public String toString() { return "ClassPojo [createTimeStamp = "+createTimeStamp+", accountId = "+accountId+", lastModifiedTimeStamp = "+lastModifiedTimeStamp+", directoryId = "+directoryId+"]"; }
 }

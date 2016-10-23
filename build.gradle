@@ -19,7 +19,15 @@ def gsonGroupId    = 'com.google.code.gson'
 def gsonArtifactId = 'gson'
 def gsonVersion    = '2.7'
 
-sourceCompatibility = 1.5
+def jsonAssertGroupId    = 'org.skyscreamer'
+def jsonAssertArtifactId = 'jsonassert'
+def jsonAssertVersion    = '1.3.0'
+
+def dataMapperGroupId    = 'org.codehaus.jackson'
+def dataMapperArtifactId = 'jackson-mapper-asl'
+def dataMapperVersion    = '1.9.13'
+
+sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
@@ -32,4 +40,6 @@ dependencies {
     compile group: httpClientGroupId, name: httpClientArtifactId, version: httpClientVersion
     compile group: httpCoreGroupId, name: httpCoreArtifactId, version: httpCoreVersion
     compile group: gsonGroupId, name: gsonArtifactId, version: gsonVersion
+    compile group: jsonAssertGroupId, name: jsonAssertArtifactId, version: jsonAssertVersion
+    compile group: dataMapperGroupId, name: dataMapperArtifactId, version: dataMapperVersion
 }
