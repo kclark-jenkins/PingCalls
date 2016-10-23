@@ -1,22 +1,14 @@
-group 'org.krisbox.examples'
-version '1.0-SNAPSHOT'
+group   'org.krisbox.examples'
+version '0.0.1-Alpha-' + getDate() + '-SNAPSHOT'
 
 apply plugin: 'java'
 
 def implTitle       = 'PingCalls - An example REST Client for Ping Authentication'
 
-def getVersion() {
-    def versionMajor = '0'
-    def versionMinor = '0.1'
-    def devStage     = 'Alpha'
-
-    return versionMajor + '.' + versionMinor + '-' + devStage;
-}
-
 def getDate() {
     def date = new Date()
     def formattedDate = date.format('yyyyMMddHHmmss')
-    return '-' + formattedDate
+    return formattedDate
 }
 
 def getMainClass() {
@@ -50,10 +42,8 @@ repositories {
 task fatJar(type: Jar) {
     manifest {
         attributes 'Implementation-Title':   implTitle,
-                   'Implementation-Version': getVersion(),
                    'Main-Class':             getMainClass()
     }
-    baseName = project.name + getDate()
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
 }
